@@ -1,6 +1,5 @@
 table{
     text-align: center;
-    margin-left: 50px;
     table-layout: fixed;
     width: 100%;
 }
@@ -20,17 +19,13 @@ thead{
 h3, h2, h5{
     font-family: Georgia;
     font-weight: bold;
-    margin-left: 50px;
 }
 h1{
     font-family: Georgia;
     font-weight: bold;
     text-align: center;
 }
-p, li, .learnMore{
-    margin-left: 50px;
-    margin-right: 50px;
-}
+
 form{
     text-align: center;
 }
@@ -46,9 +41,7 @@ img, video{
 body, html{
     height: 100%;
 }
-iFrame{
-    margin-left: 50px;
-}
+
 .img1{
     background-image: url("https://www.dasgehirn.info/sites/default/files/styles/scale_768_w/public/teaser/4.x.0%20Schule%20Edi_gr.jpg?itok=SwLTj77x");
     background-size: cover;
@@ -106,4 +99,13 @@ iFrame{
     font-weight: bold;
     color: white;
     top: 50%;
+}
+
+/* https://stackoverflow.com/questions/36110757/bootstrap-collapsed-menu-opening-then-immediately-collapsing-again/36542514 */
+.navbar-collapse.collapse.in {
+    display: block!important;
+  }
+
+.active{
+    font-weight: bold;
 }

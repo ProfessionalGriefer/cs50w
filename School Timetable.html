@@ -5,9 +5,37 @@
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
         <meta class="viewport" content="width=device-width initial-scale=1.0">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </head>
 
     <body>
+        <nav class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="navbar-brand">My Homepage</div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Index</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="The Brown Bear.html">The Brown Bear</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="School Timetable.html">School Timetable</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="The Piano.html">The Piano</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <div class="container-fluid p-5">
     <h1>My Timetable</h1>
     <p>My current timetable for the EF. EF is German and is the abbreviation for <i>Einführungsphase</i>
     or introductory phase. This school year's function is to prepare you for the Q1 and Q2, two school years
@@ -31,7 +59,7 @@
     for example.</p>
 
     <br><h3>Subjects</h3>
-    <table class="col-sm-11">
+    <table class="table table-striped">
         <thead>
             <tr>
                 <td>Abbreviation</td>
@@ -276,9 +304,6 @@
         <div class="column img2">
         <br><br><br><p class="caption">This is my school. It really looks nice, modern and not like the remains of WW2</p>
     </div></a>
-
-
-    <a href="./index.html"><h3>Homepage</h3></a>
-
+    </div>
     </body>
 </html> 
