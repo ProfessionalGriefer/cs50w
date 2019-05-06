@@ -4,7 +4,7 @@
         <title>My Timetable</title>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
-        <meta class="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
@@ -42,29 +42,29 @@
     where you collect points for your <i>Abitur</i>. After your final exams your collected points represent
     a grade.</p>
 
-    <p>The maximum amount of <i>Punkte</i> or points is 900 which represents a 1,0. In Germany you write
+    <p>The maximum amount of points is 900 which represents a 1,0. In Germany you write
     a comma instead of a dot to display float values and a dot instead of a comma to seperate groups of 3
     digits. In the American school system a <i>Grade Point Average</i> (GPA) of 4.0 represents a perfect
     score but in Germany it means the you have barely made it.</p>
 
-    <p>The lessons are 45 minutes each and 90 minutes for a <i>Doppelstunde</i> (double lesson). Each
+    <p>The lessons are 45 minutes each and 90 minutes for a double lesson. Each
     lesson is seperated by a 5 minutes break and each double lesson is seperated by a 20 minutes break.
     After the 6th lesson we get a 60 minutes break. In my opinion this is too much. I rather go earlier
     home to advance in the CS50X lessons.</p>
 
-    <p>In the grades 5 to 10, the so called <i>Unterstufe</i> (lower grade) you get a <i>Vertretungslehrer</i>
-    (substitution teacher) if your teacher is missing. But in the <i>Oberstufe</i> (upper grades?) it is a
-    <i>Freistunde</i> (free hour). You can stay in school in the <i>Oberstufenraum</i> (upper grades room?)
+    <p>In the grades 5 to 10, the so called <i>Unterstufe</i> (lower grade) you get a
+    substitution teacher if your teacher is missing. But in the <i>Oberstufe</i> (upper grades?) it is a
+    free hour. You can stay in school in the <i>Oberstufenraum</i> (upper grades room?)
     or you can go home. At some days you have so many free hours that you only come for the first two hours
     for example.</p>
 
     <br><h3>Subjects</h3>
-    <table class="table table-striped">
-        <thead>
+    <table class="table table-bordered table-responsive-sm">
+        <thead class="thead-dark">
             <tr>
-                <td>Abbreviation</td>
-                <td>German</td>
-                <td>English</td>
+                <th scope="col">Abbreviation</th>
+                <th scope="col">German</th>
+                <th scope="col">English</th>
             </tr>
         </thead>
         <tbody>
@@ -131,15 +131,15 @@
         </tbody>
     </table>
     <br><h3>Week A</h3>
-    <table class="col-sm-11">
-        <thead>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
             <tr>
-                <td></td>
-                <td>Monday</td>
-                <td>Tuesday</td>
-                <td>Wednesday</td>
-                <td>Thursday</td>
-                <td>Friday</td>
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
             </tr>
         </thead>
         <tbody>
@@ -198,15 +198,15 @@
     </table>
 
     <br><h3>Week B</h3>
-    <table class="col-sm-11">
-        <thead>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
             <tr>
-                <td></td>
-                <td>Monday</td>
-                <td>Tuesday</td>
-                <td>Wednesday</td>
-                <td>Thursday</td>
-                <td>Friday</td>
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
             </tr>
         </thead>
         <tbody>
