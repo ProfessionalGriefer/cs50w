@@ -1,111 +1,85 @@
-table{
-    text-align: center;
-    table-layout: fixed;
-    width: 100%;
-}
-
-tbody td{
-    border: 2px solid white;
-    background-color: lightblue;
-
-}
-
-thead{
-    font-size: large;
-    background-color: gray;
-
-}
-
-h3, h2, h5{
+  $color: lightblue;
+  
+  tbody {
+    background-color: $color;
+      td {    
+        vertical-align: middle !important;
+      }
+  }
+  
+  h1, h2, h3, h5 {
     font-family: Georgia;
     font-weight: bold;
-}
-h1{
-    font-family: Georgia;
-    font-weight: bold;
+  }
+  
+  h1, form, table {
     text-align: center;
-}
-
-form{
-    text-align: center;
-}
-
-
-img, video{
-    background-size: cover;
-    background-position: center;
-    margin: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-body, html{
-    height: 100%;
-}
-
-.img1{
-    background-image: url("https://www.dasgehirn.info/sites/default/files/styles/scale_768_w/public/teaser/4.x.0%20Schule%20Edi_gr.jpg?itok=SwLTj77x");
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-}
-
-.img2{
-    background-image: url("https://www.radioessen.de/uploads/pics/2017-6-8-gymbo.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-}
-
-.caption{
-    background-color: white;
-    opacity: 0.75;
-    display: block;
-    text-align: center;
-}
-
-.column{
-    float: left;
-    width: 50%;
-}
-.halfSite{
+  }
+  
+  %middle {
+      top: 50%;
+      left: 50%
+  }
+  .halfSite {
+    @extend %middle;
     height: 200px;
     width: 400px;
-
     position: fixed;
-    top: 50%;
-    left: 50%;
     margin-top: -100px;
     margin-left: -200px;
-}
-.toShow{
+  }
+  
+  .toShow {
     visibility: hidden;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-}
-.bottom{
-    position: fixed;
-    bottom: -0px;
-}
-.pianoPic{
-    background-image: url("https://imgs.classicfm.com/images/7443?width=5376&crop=16_9&signature=3FIrw5vK3aMvskeaq6ax3dbCCNw=");
+  }
+
+  /* https://stackoverflow.com/questions/36110757/bootstrap-collapsed-menu-opening-then-immediately-collapsing-again/36542514 */
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  
+  .active {
+    font-weight: bold;
+  }
+
+  img, video {
+      width: 100%;
+  }
+  html, body {
     height: 100%;
+  }
+
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://imgs.classicfm.com/images/7443?width=5376&crop=16_9&signature=3FIrw5vK3aMvskeaq6ax3dbCCNw=");
+    /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.bigHeader{
-    font-size: 100px;
-    font-weight: bold;
-    color: white;
-    top: 50%;
-}
-
-/* https://stackoverflow.com/questions/36110757/bootstrap-collapsed-menu-opening-then-immediately-collapsing-again/36542514 */
-.navbar-collapse.collapse.in {
-    display: block!important;
+    position: relative;
   }
-
-.active{
-    font-weight: bold;
-}
+  
+  .hero-text {
+    @extend %middle;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: $color;
+    // https://stackoverflow.com/questions/7453868/how-can-i-make-my-text-appear-in-the-center-of-this-div-both-vetically-and-horiz/7453888
+    display: block; 
+    height: 25px;  
+  }
+  
+  @media (min-Width: 500px) {
+    .hero-image{
+        height: 100%;
+    }
+  }
+  @media (max-Width: 499px) {
+    .hero-image{
+        height: 50%;
+    } 
+  }
+  /*# sourceMappingURL=styles.css.map */
+  
