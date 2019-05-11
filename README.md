@@ -60,4 +60,4 @@ Files:
 Index.html: Nice feature with javascript where you type in your name and it gets displayed. The form disappears and the background changes it's color.
 The Brown Bear.html: I took prior to CS50 a course at codecademy and pasted the code I wrote under step by step instructions. It is very basic HTML.
 School Timetable.html: 3 Tables; Implementation of 2 pictures covering the whole row (They are also links <a>).
-The Piano.html: Implemented a YouTube Video and covered the whole screen with a piano Picture ("Hero Image"). Short description of my favourite piano pieces.
+The Piano.html: Implemented a YouTube Video and covered the whole screen with a piano Picture ("Hero Image"). Short description of my favourite piano pieces. I don't own the embedded video.
